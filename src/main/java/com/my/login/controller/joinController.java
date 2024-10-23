@@ -19,7 +19,6 @@ public class joinController {
 
     @PostMapping("/joinProc")
     public String joinProcess(JoinDTO joinDTO) {
-        joinService.joinProcess(joinDTO);
         return "redirect:/login";
     }
 }
